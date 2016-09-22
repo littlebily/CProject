@@ -542,63 +542,63 @@
 //    return 0;
 //}
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
-char *getHint(char *secret, char *guess);
-
-int main()
-{
-//    getHint("1807", "7810");//1A3B
-    getHint("1123", "0111");//1A1B
-    
-//    char hint[5];
-//    char *hint;
+//#include <stdlib.h>
+//#include <stdio.h>
+//#include <string.h>
+//
+//char *getHint(char *secret, char *guess);
+//
+//int main()
+//{
+////    getHint("1807", "7810");//1A3B
+//    getHint("1123", "0111");//1A1B
 //    
-//    sprintf(hint, "%dA%dB", 1, 3);
+////    char hint[5];
+////    char *hint;
+////    
+////    sprintf(hint, "%dA%dB", 1, 3);
+////    
+////    printf("%s\n", hint);
 //    
+//
+////    char *hint;
+////    sprintf(hint, "%dA%dB", 1, 3);
+////    printf("%s\n", hint);
+//    
+//    return 0;
+//}
+//
+//char *getHint(char *secret, char *guess)
+//{
+//    int a = 0, b = 0;
+//    int count = (int)strlen(secret);
+//    
+//    for (int i = 0; i < count; i ++)
+//    {
+//        if (secret[i] == guess[i])
+//        {
+//            a ++;
+//        }
+//        else
+//        {
+//            for (int j = 0; j < count; j ++)
+//            {
+//                if (secret[i] == guess[j])
+//                {
+//                    b ++;
+//                    break;
+//                }
+//            }
+//        }
+//    }
+//    
+////    char hint[5];
+//    char *hint = malloc(5);
+//
+//    sprintf(hint, "%dA%dB", 1, 1);
+//
 //    printf("%s\n", hint);
-    
-
-//    char *hint;
-//    sprintf(hint, "%dA%dB", 1, 3);
-//    printf("%s\n", hint);
-    
-    return 0;
-}
-
-char *getHint(char *secret, char *guess)
-{
-    int a = 0, b = 0;
-    int count = (int)strlen(secret);
-    
-    for (int i = 0; i < count; i ++)
-    {
-        if (secret[i] == guess[i])
-        {
-            a ++;
-        }
-        else
-        {
-            for (int j = 0; j < count; j ++)
-            {
-                if (secret[i] == guess[j])
-                {
-                    b ++;
-                    break;
-                }
-            }
-        }
-    }
-    
-//    char hint[5];
-    char *hint = malloc(5);
-
-    sprintf(hint, "%dA%dB", 1, 1);
-
-    printf("%s\n", hint);
-    
-    return hint;
-}
+//    
+//    return hint;
+//}
 
