@@ -172,9 +172,114 @@ int main()
 //    cout << "Ben \"Buggsie\" Hacker\nwas here!\n";
     
     //11.通用字符
-    int k\u00F6rper;
-    cout << "Let them eat g\u00E2teau.\n";
+//    int k\u00F6rper;
+//    cout << "Let them eat g\u00E2teau.\n";
     
+    //12.有效位数
+//    cout.setf(ios_base::fixed, ios_base::floatfield);
+//    float tub = 10.0 / 3.0;
+//    double mint = 10.0 / 3.0;
+//    const float million = 1.0e6;
+//    
+//    cout << "tub = " << tub;
+//    cout << ", a million tubs = " << million * tub;
+//    cout << ",\nand ten million tubs = ";
+//    cout << 10 * million * tub << endl;
+//    
+//    cout << "mint = " << mint << " and a million mints = ";
+//    cout << million * mint << endl;
+    
+    //13.浮点数的运行性能
+//    float a = 2.34E+22f;
+//    float b = a + 1.0f;
+//    
+//    cout << "a = " << a << endl;
+//    cout << "b - a = " << b - a << endl;
+    
+    //14.在数组中使用字符串
+//    const int Size = 15;
+//    char name1[Size];
+//    char name2[Size] = "C++owboy";
+//    
+//    cout << "Howdy! I'm " << name2;
+//    cout << "! What's your name?\n";
+//    cin >> name1;
+//    cout << "Well, " << name1 << ", your name has ";
+//    cout << strlen(name1) << " letters and is stored\n";
+//    cout << "in an array of " << sizeof(name1) << " bytes.\n";
+//    cout << "Your initial is " << name1[0] << ".\n";
+//    name2[3] = '\0';
+//    cout << "Here are the first 3 characters of my name: ";
+//    cout << name2 <<endl;
+
+    //15.字符串输入
+//    const int ArSize = 20;
+//    char name[ArSize];
+//    char dessert[ArSize];
+//    
+//    cout << "Enter your name:\n";
+//    cin >> name;
+//    cout << "Enter your favorite dessert:\n";
+//    cin >> dessert;
+//    cout << "I have some delicious " << dessert;
+//    cout << " for you, " << name << ".\n";
+    
+    //16.字符串输入getline
+//    const int ArSize = 20;
+//    char name[ArSize];
+//    char dessert[ArSize];
+//    
+//    cout << "Enter your name:\n";
+//    cin.getline(name, ArSize);
+//    cout << "Enter your favorite dessert:\n";
+//    cin.getline(dessert, ArSize);
+//    cout << "I have some delicious " << dessert;
+//    cout << " for you, " << name << ".\n";
+    
+    //17.字符串输入get
+//    const int ArSize = 20;
+//    char name[ArSize];
+//    char dessert[ArSize];
+//
+//    cin.getline(name, ArSize);
+//    cin.getline(dessert, ArSize);
+//
+////    cin.get(name, ArSize);
+////    cin.get();
+////    cin.get(dessert, ArSize);
+//
+//    cout << "name:" << name << endl;
+//    cout << "dessert:" << dessert << endl;
+    
+    //18.混合输入字符串和数字
+//    int year;
+//    (cin >> year).get();
+////    cin.get();
+//    char address[80];
+//    cin.getline(address, 80);
+//    
+//    cout << "year:" << year << endl;
+//    cout << "address:" << address << endl;
+    
+    //19.string对象与字符数组（程序清单4.7）
+    char charr1[20];
+    char charr2[20] = "jaguar";
+    string str1;
+    string str2 = "panther";
+    
+    cout << "Enter a kind of feline:";
+    cin >> charr1;
+    cout << "Enter another kind of feline:";
+    cin >> str1;
+    cout << "Here are some feline:\n";
+    cout << charr1 << " " << charr2 << " "
+         << str1 << " " << str2
+         << endl;
+    cout << "The third letter in " << charr2 << " is "
+         << charr2[2] << endl;
+    cout << "The third letter in " << str2 << " is "
+         << str2[2] << endl;
+
     return 0;
 }
 
